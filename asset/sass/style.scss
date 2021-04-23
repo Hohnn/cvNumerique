@@ -1,0 +1,173 @@
+body {
+    background-color: rgb(248, 248, 248);
+}
+
+header {
+    background-image: url(../img/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    h1 {
+        color: white;
+        text-shadow: 0 2px 2px black;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    nav {
+        background-color: rgba(0, 0, 0, 0.671) !important;
+        margin-top: auto;
+        .mynavul {
+            font-size: 0.7rem;
+            li {
+                transition: 0.4s;
+            }
+            li:hover {
+                background-color: rgba(255, 255, 255, 0.151);
+            }
+        }
+    }
+    
+}
+
+/* .myBadge {
+    background-image: linear-gradient(rgb(255, 255, 255) 60%, rgb(150, 150, 150), black) !important;
+    color: black;
+    padding: 15px 15px !important;
+    font-weight: bold !important;
+} */
+
+.portrait {
+    background-image: url(../img/lala-azizli-qANvvc543Tg-unsplash.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+.barOut {
+    width: 95%;
+    height: 20px;
+    background-image: linear-gradient(90deg,#adc0ff, #3138ff);
+    border-radius: 100px;
+    position: relative;
+    margin: 20px 0;
+}
+.barOut::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    height: 16px;
+    border-radius: 100px;
+    top: 2px;
+    left: 2px;
+}
+
+.back .barOut::after {
+    width: 10%;
+}
+.design .barOut::after {
+    width: 40%;
+}
+
+.myshadow {
+    box-shadow: 0 4px 5px 3px rgba(0, 0, 0, 0.144);
+    border-radius: 10px;
+}
+
+.mygrey {
+    color: rgba(0, 0, 0, 0.493);
+}
+
+.cross {
+    position: absolute;
+    width: 15px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.ligne::before {
+    content: '';
+    height: 900px;
+    width: 2px;
+    background-color: rgba(0, 0, 0, 0.452);
+    position: absolute;
+    transform: translatex(-50%);
+    left: 50%;
+    top: -20px;
+}
+
+@media screen and (max-width: 1400px) {
+    .ligne::before {
+        height: 950px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .ligne::before {
+        height: 1000px;
+    }
+}
+
+.mycard {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 500px;
+    margin: 0 auto;
+    h4 {
+        position: absolute;
+        bottom: 0;
+        background: rgba(5, 1, 255, 0.158);
+        backdrop-filter: blur( 2px );
+        -webkit-backdrop-filter: blur( 2px );
+        width: 100%;
+        text-align: center;
+        font-size: 0.8rem;
+        padding: 10px 0;
+        margin-bottom: 0;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.425);
+        transition: 0.5s;
+        height: 40px;
+        .cardDesc {
+            position: absolute;
+            max-width: 200px;
+            left: 50%;
+            top: 50px;
+            transform: translateX(-50%);
+            font-size: 1rem;
+            text-shadow: 0 0px 10px black;
+        }
+    }    
+    
+}
+
+.mycard:hover h4{
+    height: 100%;    
+}
+
+.hobbies div p:last-of-type{
+    max-width: 320px;
+}
+
+.blanc img {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(36deg) brightness(105%) contrast(105%);
+}
+
+footer {
+    background-color: #323232;
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.discord {
+    cursor: pointer;
+}
